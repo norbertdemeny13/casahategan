@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magazin – Casa Hațegan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/logo.svg">
+</head>
+<body>
+  <div id="chrome-top"></div>
+  <main class="page">
+    <div class="wrap">
+      <h1 data-shop-title>Magazin</h1>
+      <form class="shop-tools" action="magazin.html">
+        <input data-shop-search name="q" type="search" placeholder="Caută în magazin" aria-label="Caută în magazin">
+        <button class="btn btn-gold" type="submit">Caută</button>
+      </form>
+      <div class="filters">
+        <a class="chip is-active" data-cat-link="toate" href="magazin.html">Toate</a>
+        <a class="chip" data-cat-link="constructii" href="magazin.html?categorie=constructii">Construcții</a>
+        <a class="chip" data-cat-link="electrice" href="magazin.html?categorie=electrice">Electrice și iluminat</a>
+        <a class="chip" data-cat-link="casa" href="magazin.html?categorie=casa">Casă și grădină</a>
+        <a class="chip" data-cat-link="instalatii" href="magazin.html?categorie=instalatii">Instalații</a>
+        <a class="chip" data-cat-link="amenajari" href="magazin.html?categorie=amenajari">Amenajări interioare</a>
+      </div>
+      <div class="product-grid shop-grid" data-shop></div>
+    </div>
+  </main>
+  <div id="chrome-bottom"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coș – Casa Hațegan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/logo.svg">
+</head>
+<body>
+  <div id="chrome-top"></div>
+  <main class="page">
+    <div class="wrap" data-cart-page>
+      <h1>Coș</h1>
+      <div class="cart-layout">
+        <div data-cart-lines></div>
+        <aside class="summary" data-cart-summary>
+          <h2>Sumar comandă</h2>
+          <div class="summary-row"><span>Subtotal</span><span data-subtotal>0,00 lei</span></div>
+          <div class="summary-row"><span>Reducere</span><span data-discount>0,00 lei</span></div>
+          <div class="coupon-row">
+            <input data-coupon-input type="text" placeholder="Cupon" aria-label="Cupon" value="">
+            <button class="btn btn-outline" type="button" data-apply-coupon>Aplică</button>
+          </div>
+          <div class="sum-total"><span>Total</span><span data-total>0,00 lei</span></div>
+          <form class="form" data-checkout>
+            <label class="field"><span>Nume și prenume</span><input name="nume" required></label>
+            <label class="field"><span>Telefon</span><input name="telefon" type="tel" required></label>
+            <label class="field"><span>Email</span><input name="email" type="email" required></label>
+            <label class="field"><span>Adresă</span><input name="adresa" required></label>
+            <label class="field"><span>Oraș</span><input name="oras" required></label>
+            <label class="field"><span>Județ</span><input name="judet" required></label>
+            <label class="field"><span>Plată</span>
+              <select name="plata">
+                <option>Ramburs</option>
+                <option>Transfer bancar</option>
+                <option>Card, la confirmare</option>
+              </select>
+            </label>
+            <label class="field"><span>Mențiuni</span><textarea name="note" rows="3"></textarea></label>
+            <button class="btn btn-gold" type="submit">Trimite comanda</button>
+          </form>
+          <div class="notice" data-checkout-done hidden></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <div id="chrome-bottom"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
